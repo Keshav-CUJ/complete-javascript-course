@@ -64,5 +64,44 @@ const discription = country + " is in "+ continent+", and it's "+ population+ " 
 
 console.log(discription);
 
-population = 155;
+population = 13;
 console.log(discription);  //const value does not change because it does not evaluated again.
+
+console.log("Assignment of string literals");
+
+const newDiscription = `${country} is in ${continent} and it's ${population} million people speak ${language}.`
+
+console.log(newDiscription);
+
+console.log(`My name is Keshav
+and i am 
+writing a multiline 
+comment.`)
+
+console.log("Assignment for conditional statements")
+
+if(population > 33) console.log(`${country}'s population is above average.`);
+else console.log(`${country}'s population is ${33 - population} million below the average population.`)
+
+console.log("Assignment on Type conversion and coercion");
+
+console.log('9'-'5');
+console.log('19'-'13' + '17');
+console.log('19'- '13' + 17); // after minus operation type is number not string.
+console.log(typeof ('19' - '17'));
+console.log(NaN + 2);
+console.log('123' < 57);
+console.log('bhatt' < '57'); // bhatt converted to NaN
+console.log(NaN < 57);
+console.log(5 + 6 + '4' + 9 - 4 - 2)
+console.log(NaN >= NaN);
+
+console.log("\n \n \n \n Assignment on === and ==");
+
+console.log(NaN === NaN);
+
+const numNeighbours = Number(prompt("How many neighbours countries does your country have? "));
+
+if(numNeighbours === 1) console.log("Only one neighbour");
+else if(numNeighbours>1) console.log("More than 1 neighbour.")
+else console.log("No borders");
